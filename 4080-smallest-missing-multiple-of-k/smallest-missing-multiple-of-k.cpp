@@ -1,6 +1,7 @@
 class Solution {
 public:
     int find(vector<int>nums,int i,int num){
+        if((num>nums[nums.size()-1])||(num<nums[0]))return -1;
         for(int j=i;j<nums.size();j++){
             if(nums[j]==num)return j;
         }
